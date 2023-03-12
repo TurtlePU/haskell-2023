@@ -4,19 +4,19 @@ import Control.Exception (Exception)
 
 -- (1 балл) Перечислите всё, что может пойти не так в ходе выполнения операций
 -- newAccount
---  m a is Nothing
+--  баланс a < 0
 -- balance
---  m b is Nothing
 --  b < 0
 -- deposit
 --  изначальный баланс a < 0
+--  b < 0
 --  итоговый баланс a < 0
---  m () is Nothing
 -- withdraw
+--  b < 0
+--  изначальный баланс a < 0
 --  итоговый баланс a < 0
---  m () is Nothing
 -- deleteAccount
---  m () is Nothing
+--  баланс a < 0
 -- из @MonadBank@.
 
 data BankError = DummyError deriving (Show)
