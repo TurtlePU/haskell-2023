@@ -9,6 +9,7 @@ import Control.Exception (Exception)
 --  m b is Nothing
 --  b < 0
 -- deposit
+--  изначальный баланс a < 0
 --  итоговый баланс a < 0
 --  m () is Nothing
 -- withdraw
